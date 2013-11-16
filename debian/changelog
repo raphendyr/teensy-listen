@@ -1,3 +1,9 @@
+teensy-listen (1.01-3) unstable; urgency=low
+
+  * Update description
+
+ -- Jaakko Kantojärvi <jaakko@n-1.fi>  Sat, 16 Nov 2013 20:12:16 +0200
+
 teensy-listen (1.01-2) unstable; urgency=low
 
   * Imported Upstream version 1.01
