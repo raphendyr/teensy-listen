@@ -1,5 +1,6 @@
-teensy-listen (1.01-1) unstable; urgency=low
+teensy-listen (1.01-2) unstable; urgency=low
 
   * Imported Upstream version 1.01
+  * Makefile instalaltion support
 
  -- Jaakko Kantojärvi <jaakko@n-1.fi>  Sat, 16 Nov 2013 15:20:49 +0200
