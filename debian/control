@@ -11,5 +11,8 @@ Vcs-Browser: http://github.com/raphendyr/teensy-listen
 Package: teensy-listen
 Architecture: any
 Depends: teensy-common, ${shlibs:Depends}, ${misc:Depends}
-Description: <insert up to 60 chars description>
- <insert long description, indented with spaces>
+Description: Program to print debug messages from teensy
+ Teensy is product from http://www.pjrc.com/teensy/
+ .
+ Teensy HID listen prints messages from teensy HID device.
+ These messages are send from teensy device.
