@@ -1,0 +1,10 @@
+teensy-listen for Debian
+------------------------
+
+This package is provided as is.
+
+It is part of teensy packages build from files found from http://www.pjrc.com/teensy
+
+You should send all application related stuff directly to upstream and others to me.
+
+ -- Jaakko Kantojärvi <jaakko@n-1.fi>  Sat, 16 Nov 2013 00:12:26 +0200

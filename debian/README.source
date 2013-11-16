@@ -1,0 +1,20 @@
+teensy-listen for Debian
+------------------------
+
+Source is distributed as bundled zip archive, which is not valid debian original tar ball.
+
+First unzip, remove binary files and other irrelevant files and create tar.gz.
+
+Use `git-import-orig teensy-listen.tar.gz`
+
+No we have new upstream release imported into git and merged into master (debian branch).
+
+Use `gbp-pq switch` to switch between patch queue and master.
+
+Use `gbp-pq export` to create debian/paches from patch queue.
+
+USe `git-dch -a -R|-S` to create changelog entry from git commits (-R = release, -S = snapshot).
+
+
+ -- Jaakko Kantojärvi <jaakko@n-1.fi>  Sat, 16 Nov 2013 15:20:49 +0200
+
