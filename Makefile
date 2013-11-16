@@ -1,3 +1,5 @@
+include installation.mk
+
 PROG = hid_listen
 
 OS = LINUX
