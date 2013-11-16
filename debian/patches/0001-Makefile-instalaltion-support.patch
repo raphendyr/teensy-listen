@@ -1,0 +1,35 @@
+From: =?UTF-8?q?Jaakko=20Kantoj=C3=A4rvi?= <jaakko@n-1.fi>
+Date: Sat, 16 Nov 2013 15:40:44 +0200
+Subject: Makefile instalaltion support
+
+---
+ Makefile        | 2 ++
+ installation.mk | 9 +++++++++
+ 2 files changed, 11 insertions(+)
+ create mode 100644 installation.mk
+
+diff --git a/Makefile b/Makefile
+index 23e8535..4d4a3d3 100644
+--- a/Makefile
++++ b/Makefile
+@@ -1,3 +1,5 @@
++include installation.mk
++
+ PROG = hid_listen
+ 
+ OS = LINUX
+diff --git a/installation.mk b/installation.mk
+new file mode 100644
+index 0000000..b29cea5
+--- /dev/null
++++ b/installation.mk
+@@ -0,0 +1,9 @@
++PREFIX = $(if $(DESTDIR),$(DESTDIR)/usr,$(if $(filter root,$(USER)),/usr/local,$(HOME)/.local))
++BINDIR = $(PREFIX)/bin
++LIBDIR = $(PREFIX)/lib/$(TARGET)
++
++.PHONY: install
++install: hid_listen
++	install -D -T -m 0755 -o root $< $(BINDIR)/teensy-listen
++
++.DEFAULT_GOAL := hid_listen
