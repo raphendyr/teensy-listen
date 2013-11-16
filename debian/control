@@ -5,11 +5,11 @@ Maintainer: Jaakko Kantojärvi <jaakko@n-1.fi>
 Build-Depends: debhelper (>= 8.0.0)
 Standards-Version: 3.9.4
 Homepage: http://www.pjrc.com/teensy/hid_listen.html
-Vcs-Git: git://github.com/rpahendyr/teensy-listen.git
-Vcs-Browser: http://github.com/rpahendyr/teensy-listen
+Vcs-Git: git://github.com/raphendyr/teensy-listen.git
+Vcs-Browser: http://github.com/raphendyr/teensy-listen
 
 Package: teensy-listen
 Architecture: any
-Depends: ${shlibs:Depends}, ${misc:Depends}
+Depends: teensy-common, ${shlibs:Depends}, ${misc:Depends}
 Description: <insert up to 60 chars description>
  <insert long description, indented with spaces>
