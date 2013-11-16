@@ -1,4 +1,5 @@
 hid_listen
+*.o
 debian/*.ex
 debian/files
 debian/teensy-listen*
